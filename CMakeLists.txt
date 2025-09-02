@@ -1,32 +1,9 @@
-cmake_minimum_required(VERSION 3.15)
-project(NetworkScannerProject LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.10)
+project(StealthScanner)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Установим флаги компилятора (пример для Clang)
-if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    add_compile_options(
-        -Wall
-        -Wextra
-        -Wpedantic
-        -Wshadow
-        -Wformat=2
-        -Wcast-align
-        -Wconversion
-        -Wsign-conversion
-        -Wnull-dereference
-        -g3
-        -O0
-    )
-endif()
+find_package(nlohmann_json 3.2.0 REQUIRED)
 
-# Укажите исходные файлы проекта
-set(SOURCES
-    main.cpp
-    NetworkScanner.cpp
-    OutputUtils.cpp
-)
-
-add_executable(NetworkScanner ${SOURCES})
+add_executable(scanner scanner.cpp)
+target_link_libraries(scanner PRIVATE nlohmann_json::nlohmann_json pthread)
