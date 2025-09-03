@@ -9,6 +9,7 @@
 #include <fstream>
 #include <thread>
 #include <algorithm>
+#include <unistd.h>
 
 Scanner::Scanner(std::string ip, std::vector<int> ports, int threads, int timeout_ms,
                  ScanMode mode, bool banner)
