@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Scanner",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/scanner",
+            "args": ["-t", "127.0.0.1", "-p", "1-100"],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "lldb"
+        }
+    ]
+}
