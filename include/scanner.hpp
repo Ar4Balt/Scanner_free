@@ -1,34 +1,44 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <thread>
+#include <mutex>
+#include <queue>
+#include <condition_variable>
+#include <atomic>
 
-struct PortResult {
+// Результат по одному порту
+struct ScanResult {
     int port;
     bool open;
     std::string banner;
 };
 
-enum class ScanMode { CONNECT, SYN };
-
 class Scanner {
 public:
-    Scanner(std::string ip, std::vector<int> ports, int threads, int timeout_ms,
-            ScanMode mode, bool banner);
+    Scanner(const std::string& target, const std::vector<int>& ports,
+            int threads, bool syn_mode, bool grab_banner);
 
-    void run();
-    void save_json(const std::string& path);
-    const std::vector<PortResult>& get_results() const;
+    std::vector<ScanResult> run();
+    void save_json(const std::string& path) const;
 
 private:
-    void worker();
-    std::string target_ip;
+    std::string target;
     std::vector<int> ports;
-    int num_threads;
-    int timeout_ms;
-    ScanMode mode;
-    bool grab_banner;
+    int thread_count;
+    bool syn_scan;
+    bool banner_grab;
 
-    std::vector<PortResult> results;
     std::queue<int> task_queue;
-    std::mutex q_mtx, r_mtx;
+    mutable std::mutex queue_mtx;
+    std::condition_variable cv;
+    std::atomic<bool> done{false};
+
+    std::vector<ScanResult> results;
+    mutable std::mutex results_mtx;
+
+    void worker();
+    bool scan_tcp_connect(int port, std::string& banner);
+    bool scan_tcp_syn(int port);
+    std::string grab_banner_from_socket(int sock);
 };

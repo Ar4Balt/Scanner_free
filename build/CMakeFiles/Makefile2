@@ -85,12 +85,12 @@ clean: CMakeFiles/scanner.dir/clean
 CMakeFiles/scanner.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target scanner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=1,2,3 "Built target scanner"
 .PHONY : CMakeFiles/scanner.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/scanner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/scanner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles 0
 .PHONY : CMakeFiles/scanner.dir/rule
@@ -102,7 +102,7 @@ scanner: CMakeFiles/scanner.dir/rule
 # codegen rule for target.
 CMakeFiles/scanner.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target scanner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target scanner"
 .PHONY : CMakeFiles/scanner.dir/codegen
 
 # clean rule for target.

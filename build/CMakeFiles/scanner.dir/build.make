@@ -72,38 +72,10 @@ include CMakeFiles/scanner.dir/flags.make
 CMakeFiles/scanner.dir/codegen:
 .PHONY : CMakeFiles/scanner.dir/codegen
 
-CMakeFiles/scanner.dir/src/banner.cpp.o: CMakeFiles/scanner.dir/flags.make
-CMakeFiles/scanner.dir/src/banner.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/banner.cpp
-CMakeFiles/scanner.dir/src/banner.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scanner.dir/src/banner.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/banner.cpp.o -MF CMakeFiles/scanner.dir/src/banner.cpp.o.d -o CMakeFiles/scanner.dir/src/banner.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/banner.cpp
-
-CMakeFiles/scanner.dir/src/banner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scanner.dir/src/banner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tunnikau.artur/Desktop/проекты/Scanner/src/banner.cpp > CMakeFiles/scanner.dir/src/banner.cpp.i
-
-CMakeFiles/scanner.dir/src/banner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/banner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/banner.cpp -o CMakeFiles/scanner.dir/src/banner.cpp.s
-
-CMakeFiles/scanner.dir/src/json_writer.cpp.o: CMakeFiles/scanner.dir/flags.make
-CMakeFiles/scanner.dir/src/json_writer.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/json_writer.cpp
-CMakeFiles/scanner.dir/src/json_writer.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scanner.dir/src/json_writer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/json_writer.cpp.o -MF CMakeFiles/scanner.dir/src/json_writer.cpp.o.d -o CMakeFiles/scanner.dir/src/json_writer.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/json_writer.cpp
-
-CMakeFiles/scanner.dir/src/json_writer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scanner.dir/src/json_writer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tunnikau.artur/Desktop/проекты/Scanner/src/json_writer.cpp > CMakeFiles/scanner.dir/src/json_writer.cpp.i
-
-CMakeFiles/scanner.dir/src/json_writer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/json_writer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/json_writer.cpp -o CMakeFiles/scanner.dir/src/json_writer.cpp.s
-
 CMakeFiles/scanner.dir/src/main.cpp.o: CMakeFiles/scanner.dir/flags.make
 CMakeFiles/scanner.dir/src/main.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/main.cpp
 CMakeFiles/scanner.dir/src/main.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scanner.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scanner.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/main.cpp.o -MF CMakeFiles/scanner.dir/src/main.cpp.o.d -o CMakeFiles/scanner.dir/src/main.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/main.cpp
 
 CMakeFiles/scanner.dir/src/main.cpp.i: cmake_force
@@ -114,24 +86,10 @@ CMakeFiles/scanner.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/main.cpp -o CMakeFiles/scanner.dir/src/main.cpp.s
 
-CMakeFiles/scanner.dir/src/ports.cpp.o: CMakeFiles/scanner.dir/flags.make
-CMakeFiles/scanner.dir/src/ports.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/ports.cpp
-CMakeFiles/scanner.dir/src/ports.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scanner.dir/src/ports.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/ports.cpp.o -MF CMakeFiles/scanner.dir/src/ports.cpp.o.d -o CMakeFiles/scanner.dir/src/ports.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/ports.cpp
-
-CMakeFiles/scanner.dir/src/ports.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scanner.dir/src/ports.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tunnikau.artur/Desktop/проекты/Scanner/src/ports.cpp > CMakeFiles/scanner.dir/src/ports.cpp.i
-
-CMakeFiles/scanner.dir/src/ports.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/ports.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/ports.cpp -o CMakeFiles/scanner.dir/src/ports.cpp.s
-
 CMakeFiles/scanner.dir/src/scanner.cpp.o: CMakeFiles/scanner.dir/flags.make
 CMakeFiles/scanner.dir/src/scanner.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/scanner.cpp
 CMakeFiles/scanner.dir/src/scanner.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scanner.dir/src/scanner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/scanner.cpp.o -MF CMakeFiles/scanner.dir/src/scanner.cpp.o.d -o CMakeFiles/scanner.dir/src/scanner.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/scanner.cpp
 
 CMakeFiles/scanner.dir/src/scanner.cpp.i: cmake_force
@@ -142,57 +100,19 @@ CMakeFiles/scanner.dir/src/scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/scanner.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/scanner.cpp -o CMakeFiles/scanner.dir/src/scanner.cpp.s
 
-CMakeFiles/scanner.dir/src/synscan.cpp.o: CMakeFiles/scanner.dir/flags.make
-CMakeFiles/scanner.dir/src/synscan.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/synscan.cpp
-CMakeFiles/scanner.dir/src/synscan.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scanner.dir/src/synscan.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/synscan.cpp.o -MF CMakeFiles/scanner.dir/src/synscan.cpp.o.d -o CMakeFiles/scanner.dir/src/synscan.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/synscan.cpp
-
-CMakeFiles/scanner.dir/src/synscan.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scanner.dir/src/synscan.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tunnikau.artur/Desktop/проекты/Scanner/src/synscan.cpp > CMakeFiles/scanner.dir/src/synscan.cpp.i
-
-CMakeFiles/scanner.dir/src/synscan.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/synscan.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/synscan.cpp -o CMakeFiles/scanner.dir/src/synscan.cpp.s
-
-CMakeFiles/scanner.dir/src/utils.cpp.o: CMakeFiles/scanner.dir/flags.make
-CMakeFiles/scanner.dir/src/utils.cpp.o: /Users/tunnikau.artur/Desktop/проекты/Scanner/src/utils.cpp
-CMakeFiles/scanner.dir/src/utils.cpp.o: CMakeFiles/scanner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scanner.dir/src/utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scanner.dir/src/utils.cpp.o -MF CMakeFiles/scanner.dir/src/utils.cpp.o.d -o CMakeFiles/scanner.dir/src/utils.cpp.o -c /Users/tunnikau.artur/Desktop/проекты/Scanner/src/utils.cpp
-
-CMakeFiles/scanner.dir/src/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scanner.dir/src/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tunnikau.artur/Desktop/проекты/Scanner/src/utils.cpp > CMakeFiles/scanner.dir/src/utils.cpp.i
-
-CMakeFiles/scanner.dir/src/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/src/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tunnikau.artur/Desktop/проекты/Scanner/src/utils.cpp -o CMakeFiles/scanner.dir/src/utils.cpp.s
-
 # Object files for target scanner
 scanner_OBJECTS = \
-"CMakeFiles/scanner.dir/src/banner.cpp.o" \
-"CMakeFiles/scanner.dir/src/json_writer.cpp.o" \
 "CMakeFiles/scanner.dir/src/main.cpp.o" \
-"CMakeFiles/scanner.dir/src/ports.cpp.o" \
-"CMakeFiles/scanner.dir/src/scanner.cpp.o" \
-"CMakeFiles/scanner.dir/src/synscan.cpp.o" \
-"CMakeFiles/scanner.dir/src/utils.cpp.o"
+"CMakeFiles/scanner.dir/src/scanner.cpp.o"
 
 # External object files for target scanner
 scanner_EXTERNAL_OBJECTS =
 
-scanner: CMakeFiles/scanner.dir/src/banner.cpp.o
-scanner: CMakeFiles/scanner.dir/src/json_writer.cpp.o
 scanner: CMakeFiles/scanner.dir/src/main.cpp.o
-scanner: CMakeFiles/scanner.dir/src/ports.cpp.o
 scanner: CMakeFiles/scanner.dir/src/scanner.cpp.o
-scanner: CMakeFiles/scanner.dir/src/synscan.cpp.o
-scanner: CMakeFiles/scanner.dir/src/utils.cpp.o
 scanner: CMakeFiles/scanner.dir/build.make
 scanner: CMakeFiles/scanner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable scanner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable scanner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scanner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -129,54 +129,6 @@ scanner/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/build
 .PHONY : scanner/fast
 
-src/banner.o: src/banner.cpp.o
-.PHONY : src/banner.o
-
-# target to build an object file
-src/banner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/banner.cpp.o
-.PHONY : src/banner.cpp.o
-
-src/banner.i: src/banner.cpp.i
-.PHONY : src/banner.i
-
-# target to preprocess a source file
-src/banner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/banner.cpp.i
-.PHONY : src/banner.cpp.i
-
-src/banner.s: src/banner.cpp.s
-.PHONY : src/banner.s
-
-# target to generate assembly for a file
-src/banner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/banner.cpp.s
-.PHONY : src/banner.cpp.s
-
-src/json_writer.o: src/json_writer.cpp.o
-.PHONY : src/json_writer.o
-
-# target to build an object file
-src/json_writer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/json_writer.cpp.o
-.PHONY : src/json_writer.cpp.o
-
-src/json_writer.i: src/json_writer.cpp.i
-.PHONY : src/json_writer.i
-
-# target to preprocess a source file
-src/json_writer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/json_writer.cpp.i
-.PHONY : src/json_writer.cpp.i
-
-src/json_writer.s: src/json_writer.cpp.s
-.PHONY : src/json_writer.s
-
-# target to generate assembly for a file
-src/json_writer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/json_writer.cpp.s
-.PHONY : src/json_writer.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -200,30 +152,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/ports.o: src/ports.cpp.o
-.PHONY : src/ports.o
-
-# target to build an object file
-src/ports.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/ports.cpp.o
-.PHONY : src/ports.cpp.o
-
-src/ports.i: src/ports.cpp.i
-.PHONY : src/ports.i
-
-# target to preprocess a source file
-src/ports.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/ports.cpp.i
-.PHONY : src/ports.cpp.i
-
-src/ports.s: src/ports.cpp.s
-.PHONY : src/ports.s
-
-# target to generate assembly for a file
-src/ports.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/ports.cpp.s
-.PHONY : src/ports.cpp.s
 
 src/scanner.o: src/scanner.cpp.o
 .PHONY : src/scanner.o
@@ -249,54 +177,6 @@ src/scanner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/scanner.cpp.s
 .PHONY : src/scanner.cpp.s
 
-src/synscan.o: src/synscan.cpp.o
-.PHONY : src/synscan.o
-
-# target to build an object file
-src/synscan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/synscan.cpp.o
-.PHONY : src/synscan.cpp.o
-
-src/synscan.i: src/synscan.cpp.i
-.PHONY : src/synscan.i
-
-# target to preprocess a source file
-src/synscan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/synscan.cpp.i
-.PHONY : src/synscan.cpp.i
-
-src/synscan.s: src/synscan.cpp.s
-.PHONY : src/synscan.s
-
-# target to generate assembly for a file
-src/synscan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/synscan.cpp.s
-.PHONY : src/synscan.cpp.s
-
-src/utils.o: src/utils.cpp.o
-.PHONY : src/utils.o
-
-# target to build an object file
-src/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/utils.cpp.o
-.PHONY : src/utils.cpp.o
-
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
-
-# target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
-
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
-
-# target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scanner.dir/build.make CMakeFiles/scanner.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,27 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... scanner"
-	@echo "... src/banner.o"
-	@echo "... src/banner.i"
-	@echo "... src/banner.s"
-	@echo "... src/json_writer.o"
-	@echo "... src/json_writer.i"
-	@echo "... src/json_writer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/ports.o"
-	@echo "... src/ports.i"
-	@echo "... src/ports.s"
 	@echo "... src/scanner.o"
 	@echo "... src/scanner.i"
 	@echo "... src/scanner.s"
-	@echo "... src/synscan.o"
-	@echo "... src/synscan.i"
-	@echo "... src/synscan.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
 .PHONY : help
 
 

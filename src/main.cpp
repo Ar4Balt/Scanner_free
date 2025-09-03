@@ -1,38 +1,63 @@
 #include "scanner.hpp"
-#include "utils.hpp"
+#include "json_writer.hpp"
 #include <iostream>
 
-static void print_usage(const char* prog) {
-    std::cout << "Usage: " << prog << " -t <target> -p <ports> [-m threads] [-o out.json] [--syn] [--banner]\n";
-}
-
 int main(int argc, char* argv[]) {
-    std::string target, ports_spec, out_file="results.json";
-    int threads=100, timeout_ms=800;
-    bool use_syn=false, use_banner=false;
-
-    for (int i=1;i<argc;i++) {
-        std::string a=argv[i];
-        if (a=="-t" && i+1<argc) target=argv[++i];
-        else if (a=="-p" && i+1<argc) ports_spec=argv[++i];
-        else if (a=="-m" && i+1<argc) threads=std::stoi(argv[++i]);
-        else if (a=="-o" && i+1<argc) out_file=argv[++i];
-        else if (a=="--syn") use_syn=true;
-        else if (a=="--banner") use_banner=true;
+    if (argc < 5) {
+        std::cerr << "Usage: " << argv[0]
+                  << " -t <target> -p <ports> [-m threads] [-s] [-b] [-o output.json]\n";
+        return 1;
     }
 
-    if (target.empty()||ports_spec.empty()) { print_usage(argv[0]); return 1; }
+    std::string target;
+    std::vector<int> ports;
+    int threads = 10;
+    bool syn_mode = false;
+    bool grab_banner = false;
+    std::string output_file = "results.json";
 
-    auto ip=resolve_target_to_ipv4(target);
-    if (!ip) { std::cerr<<"[-] Cannot resolve target\n"; return 1; }
-    auto ports=parse_ports(ports_spec);
+    // --- простой парсинг аргументов ---
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+        if (arg == "-t" && i + 1 < argc) {
+            target = argv[++i];
+        } else if (arg == "-p" && i + 1 < argc) {
+            std::string port_arg = argv[++i];
+            size_t dash = port_arg.find('-');
+            if (dash != std::string::npos) {
+                int start = std::stoi(port_arg.substr(0, dash));
+                int end = std::stoi(port_arg.substr(dash + 1));
+                for (int p = start; p <= end; ++p) ports.push_back(p);
+            } else {
+                ports.push_back(std::stoi(port_arg));
+            }
+        } else if (arg == "-m" && i + 1 < argc) {
+            threads = std::stoi(argv[++i]);
+        } else if (arg == "-s") {
+            syn_mode = true;
+        } else if (arg == "-b") {
+            grab_banner = true;
+        } else if (arg == "-o" && i + 1 < argc) {
+            output_file = argv[++i];
+        }
+    }
 
-    ScanMode mode=ScanMode::CONNECT;
-#ifdef __linux__
-    if (use_syn) mode=ScanMode::SYN;
-#endif
+    if (target.empty() || ports.empty()) {
+        std::cerr << "❌ Target (-t) and ports (-p) are required.\n";
+        return 1;
+    }
 
-    Scanner s(*ip, ports, threads, timeout_ms, mode, use_banner);
-    s.run();
-    s.save_json(out_file);
+    // --- запуск сканера ---
+    Scanner scanner(target, ports, threads, syn_mode, grab_banner);
+    auto results = scanner.run();
+
+    // --- JSON вывод ---
+    auto json = JsonWriter::to_json(target, results);
+    if (JsonWriter::save_to_file(output_file, json)) {
+        std::cout << "✅ Results saved to " << output_file << "\n";
+    } else {
+        std::cerr << "❌ Failed to save results to " << output_file << "\n";
+    }
+
+    return 0;
 }
