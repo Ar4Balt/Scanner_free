@@ -1,0 +1,3 @@
+/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles/scanner.dir
+/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles/edit_cache.dir
+/Users/tunnikau.artur/Desktop/проекты/Scanner/build/CMakeFiles/rebuild_cache.dir
