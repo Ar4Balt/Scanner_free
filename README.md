@@ -2,7 +2,7 @@
 
 Многопоточный сканер портов на **C++17** с поддержкой TCP Connect Scan, SYN-сканирования (требует root), Banner Grabbing и сохранением результатов в **JSON**.
 
-<img src="images/ChatGPT Image 1 сент. 2025 г., 23_02_06.png" width="500"/> 
+<img src="images/ChatGPT Image 1 сент. 2025 г., 23_02_06.png" width="700"/> 
 
 ---
 
