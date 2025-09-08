@@ -1,0 +1,12 @@
+{
+  "target": "192.168.0.1",
+  "results": [
+    {"port": 21, "open": true, "banner": ""},
+    {"port": 23, "open": true, "banner": ""},
+    {"port": 53, "open": true, "banner": ""},
+    {"port": 80, "open": true, "banner": ""},
+    {"port": 139, "open": true, "banner": ""},
+    {"port": 445, "open": true, "banner": ""},
+    {"port": 1900, "open": true, "banner": ""}
+  ]
+}

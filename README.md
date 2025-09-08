@@ -45,10 +45,16 @@ brew install cmake
 
 ### Сборка
 
+**Linux (Ubuntu/Debuan):**
 ```bash
 mkdir build && cd build
 cmake ..
 cmake --build .
+```
+
+**macOS:**
+```bash
+cmake -S . -B build && cmake --build build
 ```
 
 После сборки бинарник будет доступен как `./scanner`.

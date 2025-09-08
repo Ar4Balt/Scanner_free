@@ -1,5 +1,4 @@
 #include "scanner.hpp"
-#include "json_writer.hpp"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -16,7 +15,7 @@ int main(int argc, char* argv[]) {
     bool grab_banner = false;
     std::string output_file = "results.json";
 
-    // --- простой парсинг аргументов ---
+    // --- парсинг аргументов ---
     for (int i = 1; i < argc; ++i) {
         std::string arg = argv[i];
         if (arg == "-t" && i + 1 < argc) {
@@ -52,12 +51,8 @@ int main(int argc, char* argv[]) {
     auto results = scanner.run();
 
     // --- JSON вывод ---
-    auto json = JsonWriter::to_json(target, results);
-    if (JsonWriter::save_to_file(output_file, json)) {
-        std::cout << "✅ Results saved to " << output_file << "\n";
-    } else {
-        std::cerr << "❌ Failed to save results to " << output_file << "\n";
-    }
+    scanner.save_json(output_file);
+    std::cout << "✅ Scan complete. Results saved to " << output_file << "\n";
 
     return 0;
 }
